@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flexam — Automated slicing for robotic & multi‑axis 3D printing</title>
+  <meta name="description" content="Fully automated hybrid slicing tailored to robotic and multi‑axis 3D printers. Machine‑learning segmentation, strategy selection, and hybrid toolpaths." />
+  <meta property="og:title" content="Flexam — Automated slicing for robotic & multi‑axis 3D printing" />
+  <meta property="og:description" content="Fully automated hybrid slicing tailored to your machines and workflows." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0070F3" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" data-blur>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="logo-dot" aria-hidden="true"></span>
+        <span>Flexam</span>
+      </a>
+
+      <nav class="menu" aria-label="primary">
+        <a href="index.html" aria-current="page">Software</a>
+        <a href="#" class="disabled" title="Coming soon">Applications</a>
+        <a href="about.html">About Us</a>
+      </nav>
+
+      <div class="cta">
+        <a class="btn btn-primary" href="#book" data-cta="header">Book a Demo</a>
+      </div>
+
+      <button class="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" class="mobile-menu" hidden>
+      <a href="index.html" aria-current="page">Software</a>
+      <a href="#" class="disabled">Applications</a>
+      <a href="about.html">About Us</a>
+      <a class="btn btn-primary" href="#book">Book a Demo</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="section hero">
+      <div class="container grid-2">
+        <div>
+          <h1 class="h1">
+            Automated slicing software.<br/>
+            Designed for robotic and multi‑axis 3D printing.
+          </h1>
+          <p class="lead">
+            Fully automated slicing tailored to your machines and workflows.
+            Use the most advanced machine learning and slicing technology to stay ahead of the competition.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary btn-lg" href="#book">👉 Book a Demo</a>
+            <a class="btn btn-ghost btn-lg" href="#how">📄 See How It Works</a>
+          </div>
+          <p class="microtrust">Backed by FFG • Vienna, Austria</p>
+        </div>
+        <div class="hero-card">
+          <div class="hero-stats">
+            <div class="stat">
+              <i data-feather="cpu" class="icon"></i>
+              <div>
+                <div class="kpi">Auto segmentation</div>
+                <div class="kpi-sub">Overhangs, thin walls, curvature</div>
+              </div>
+            </div>
+            <div class="stat">
+              <i data-feather="sliders" class="icon"></i>
+              <div>
+                <div class="kpi">Strategy per region</div>
+                <div class="kpi-sub">Planar, non‑planar, multi‑planar</div>
+              </div>
+            </div>
+            <div class="stat">
+              <i data-feather="git-merge" class="icon"></i>
+              <div>
+                <div class="kpi">Hybrid G‑code</div>
+                <div class="kpi-sub">Smooth, collision‑safe paths</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section class="section" id="why">
+      <div class="container narrow">
+        <h2 class="h2">Take control of multi‑axis printing.<br/>No manual slicing. Best results in minutes.</h2>
+        <p class="text-xl">
+          Flexam automates every step between your CAD file and the final print.
+          Each model is automatically segmented, and the optimal printing strategy is applied to every region — fully tailored to your setup.
+          Result: stronger parts, higher print quality, faster workflow.
+        </p>
+
+        <div class="features">
+          <article class="feature">
+            <i data-feather="grid" class="icon"></i>
+            <h3>Automatic segmentation & geometry analysis</h3>
+            <p>Detects overhangs, thin walls, curvature, planarity, and more — no CAD pre‑work.</p>
+          </article>
+          <article class="feature">
+            <i data-feather="target" class="icon"></i>
+            <h3>Optimal strategy for each region</h3>
+            <p>ML‑guided selection of planar, conformal, non‑planar, angular, or multi‑planar strategies.</p>
+          </article>
+          <article class="feature">
+            <i data-feather="git-branch" class="icon"></i>
+            <h3>Hybrid G‑code with smooth transitions</h3>
+            <p>Seam‑aware merging across strategies with collision‑safe multi‑axis paths.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="section section-alt" id="partners">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2 class="h2">Partners</h2>
+            <p>Logos of our technology and research partners will be featured here.</p>
+          </div>
+          <div class="logos">
+            <!-- Replace placeholders with real SVG/PNG; grayscale enforced via CSS -->
+            <div class="logo">FFG</div>
+            <div class="logo">FH Technikum Wien</div>
+            <div class="logo">AI for Good</div>
+            <div class="logo badge">More partners coming soon</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <div class="container narrow">
+        <h2 class="h2">From model to print.</h2>
+        <p class="text-xl">Upload any 3D model. Flexam takes care of the rest.<br/>No manual slicing. No CAD prep. No guesswork.</p>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step-icon"><i data-feather="upload"></i></span>
+            <div>
+              <h3>Upload your model</h3>
+              <p>STL, STEP, OBJ</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-icon"><i data-feather="grid"></i></span>
+            <div>
+              <h3>Automatic segmentation & analysis</h3>
+              <p>Detects overhangs, thin walls.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-icon"><i data-feather="sliders"></i></span>
+            <div>
+              <h3>Strategy selection</h3>
+              <p>Best method for each region.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-icon"><i data-feather="git-merge"></i></span>
+            <div>
+              <h3>Hybrid G‑code generation</h3>
+              <p>Smooth, collision‑safe paths.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-icon"><i data-feather="download"></i></span>
+            <div>
+              <h3>Export & print</h3>
+              <p>Ready for your system.</p>
+            </div>
+          </li>
+        </ol>
+
+        <p class="text-center text-lg">From complex geometry to clean toolpaths in minutes.</p>
+      </div>
+    </section>
+
+    <!-- Book a Demo -->
+    <section class="section cta-panel" id="book" aria-labelledby="book-title">
+      <div class="container grid-2">
+        <div>
+          <h2 class="h2" id="book-title">Want your part sliced by Flexam?</h2>
+          <p class="text-xl">Send us your 3D model and get ready‑to‑print G‑code.<br/>We’ll tailor the session to your machine, part types, and challenges.</p>
+          <div class="actions">
+            <a class="btn btn-primary btn-lg" href="mailto:hello@flexam.pro?subject=Send%20a%20model%20for%20Flexam&body=Hi%20Flexam%2C%0A%0AHere%27s%20my%203D%20model%20for%20a%20test%20slice.%20Machine%20info%3A%20%5Brobot%2Fprinter%20type%5D%2C%20material%3A%20%5B...%5D%2C%20goals%3A%20%5B...%5D.%0A%0AThanks!" rel="noopener">👉 Send a model</a>
+            <a class="btn btn-ghost btn-lg" href="mailto:hello@flexam.pro?subject=Book%20a%20Demo%20with%20Flexam">Or book a demo</a>
+          </div>
+          <p class="fine">We’ll send G‑code and a short print report. NDA on request.</p>
+        </div>
+        <div class="card">
+          <ul class="checklist">
+            <li><i data-feather="check-circle"></i> Machine‑specific presets</li>
+            <li><i data-feather="check-circle"></i> Hybrid toolpaths preview</li>
+            <li><i data-feather="check-circle"></i> Print time & material estimates</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/">
+          <span class="logo-dot" aria-hidden="true"></span>
+          <span>Flexam</span>
+        </a>
+        <p>Flexam GmbH — Vienna, Austria</p>
+        <p>📧 <a href="mailto:hello@flexam.pro">hello@flexam.pro</a></p>
+        <p>© 2025 Flexam GmbH. All rights reserved. Made in Austria.</p>
+      </div>
+      <nav class="foot-links" aria-label="footer">
+        <a href="index.html">Software</a>
+        <a href="#" class="disabled">Applications</a>
+        <a href="about.html">About Us</a>
+        <a href="#book">Book a Demo</a>
+        <a href="#" aria-disabled="true">Legal Notice</a>
+        <a href="#" aria-disabled="true">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="app.js"></script>
+</body>
+</html>
