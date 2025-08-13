@@ -97,6 +97,8 @@ img{ max-width:100%; display:block }
 }
 .btn:hover{ text-decoration:none }
 .btn:active{ transform: translateY(1px) }
+.btn:visited{ color: inherit }
+.btn-primary:visited{ color:white }
 .btn-primary{
   background:var(--brand); color:white; border-color:transparent; box-shadow: var(--shadow)
 }
