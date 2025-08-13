@@ -61,7 +61,7 @@ img{ max-width:100%; display:block }
   border-bottom: 1px solid var(--line);
 }
 .nav{ display:flex; align-items:center; gap: var(--space); min-height:70px }
-.brand{ display:inline-flex; align-items:center; gap:10px; font-weight:800; color:inherit }
+.brand{ display:inline-flex; align-items:center; gap:10px; font-weight:800; color:inherit; margin-right:auto }
 .logo-dot{ width:16px; height:16px; border-radius:50%; background:var(--brand); display:inline-block }
 
 .menu{ display:none; gap: 22px }
@@ -154,8 +154,9 @@ img{ max-width:100%; display:block }
 
 /* === Footer === */
 .site-footer{ border-top:1px solid var(--line); background:#fff; padding: var(--space-lg) 0 }
-.footer-grid{ display:grid; gap: var(--space-lg) }
-.foot-links{ display:grid; grid-template-columns: repeat(2,minmax(120px,1fr)); gap:10px }
+.footer-grid{ display:flex; align-items:center; gap: var(--space-lg) }
+.foot-brand{ flex:0 0 auto }
+.foot-links{ flex:1; display:flex; justify-content:center; gap:20px }
 .foot-links a{ color:inherit }
 
 .foot-brand p{ margin:.3rem 0 }
