@@ -6,10 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const btn = document.querySelector('.hamburger');
   const menu = document.getElementById('mobile-menu');
   if (btn && menu) {
-    btn.addEventListener('click', () => {
+    const toggleMenu = () => {
       const isOpen = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!isOpen));
       menu.hidden = isOpen;
+    };
+    btn.addEventListener('click', toggleMenu);
+    // Close menu when a link is clicked
+    menu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        btn.setAttribute('aria-expanded', 'false');
+        menu.hidden = true;
+      }
     });
   }
 

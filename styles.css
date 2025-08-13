@@ -28,6 +28,7 @@ body{
 }
 
 a{ color:var(--brand); text-decoration:none }
+a:visited{ color:var(--brand) }
 a:hover{ text-decoration: underline }
 img{ max-width:100%; display:block }
 
@@ -72,7 +73,7 @@ img{ max-width:100%; display:block }
 .hamburger{ appearance:none; background:none; border:0; padding:6px 2px; cursor:pointer }
 .hamburger i{ width:28px; height:28px }
 
-.mobile-menu{ display:flex; flex-direction:column; gap:14px; padding: 10px var(--space) var(--space); border-top:1px solid var(--line); background:var(--bg) }
+.mobile-menu{ display:flex; flex-direction:column; gap:14px; padding: 10px var(--space) var(--space); border-top:1px solid var(--line); background:var(--bg); position:absolute; top:100%; left:0; right:0 }
 .mobile-menu .btn{ width:100% }
 
 @media (min-width: 980px){
@@ -160,6 +161,11 @@ img{ max-width:100%; display:block }
 .foot-links a{ color:inherit }
 
 .foot-brand p{ margin:.3rem 0 }
+
+@media (max-width: 700px){
+  .footer-grid{ flex-direction:column; align-items:flex-start; }
+  .foot-links{ flex-direction:column; align-items:flex-start; gap:10px; }
+}
 
 /* === About === */
 .hero-mini{ padding-top: clamp(30px, 5vw, 60px) }
