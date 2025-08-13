@@ -74,6 +74,8 @@ img{ max-width:100%; display:block }
 .hamburger i{ width:28px; height:28px }
 
 .mobile-menu{ display:flex; flex-direction:column; gap:14px; padding: 10px var(--space) var(--space); border-top:1px solid var(--line); background:var(--bg); position:absolute; top:100%; left:0; right:0 }
+/* Ensure hidden attribute works even with .mobile-menu's display rule */
+.mobile-menu[hidden]{ display:none }
 .mobile-menu .btn{ width:100% }
 
 @media (min-width: 980px){
