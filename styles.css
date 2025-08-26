@@ -64,6 +64,7 @@ img{ max-width:100%; display:block }
 }
 .nav{ display:flex; align-items:center; gap: var(--space); min-height:70px }
 .brand{ display:inline-flex; align-items:center; gap:10px; font-weight:800; color:inherit; margin-right:auto }
+.brand img{ height:32px; width:auto }
 .logo-dot{ width:16px; height:16px; border-radius:50%; background:var(--brand); display:inline-block }
 
 .menu{ display:none; gap: 22px }
