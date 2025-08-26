@@ -176,10 +176,6 @@ img{ max-width:100%; display:block }
 .hero-mini{ padding-top: clamp(30px, 5vw, 60px) }
 .founders .cards{ display:grid; gap: var(--space); grid-template-columns: repeat(auto-fit,minmax(260px,1fr)) }
 .card{ background:#fff; border:1px solid var(--line); border-radius: var(--radius); padding: var(--space); box-shadow: var(--shadow) }
-.founder .avatar{
-  width:48px; height:48px; border-radius:12px; background:rgba(0,112,243,.08); color:var(--brand);
-  display:grid; place-items:center; font-weight:800; margin-bottom:10px
-}
 .founders .link i{ width:20px; height:20px }
 
 /* === Utilities === */
