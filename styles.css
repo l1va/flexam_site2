@@ -141,6 +141,7 @@ img{ max-width:100%; display:block }
   filter: grayscale(100%); opacity:.9;
 }
 .logo img{ max-height:40px; margin:auto; display:block }
+.logo-label{ margin-top:8px; font-size:14px; color:#6b7280 }
 
 /* === Steps === */
 .steps{ list-style:none; margin: var(--space-lg) 0 0; padding:0; display:grid; gap: 16px }
